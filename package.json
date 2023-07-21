@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "tim-js-sdk": "^2.27.2",
+    "tim-wx-sdk": "^2.27.2"
+  }
+}

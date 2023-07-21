@@ -1,0 +1,154 @@
+{
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				// 去掉默认头部
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "聊天",
+				// 去掉默认头部
+				"navigationStyle": "custom",
+				// 开启下来刷新
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/contacts/contact",
+			"style": {
+				"navigationBarTitleText": "联系人",
+				// 去掉默认头部
+				"navigationStyle": "custom",
+				// 开启下来刷新
+				"enablePullDownRefresh": true
+			}
+		},
+		// {
+		// 	"path": "pages/user/user",
+		// 	"style": {
+		// 		"navigationBarTitleText": "用户",
+		// 		// 去掉默认头部
+		// 		"navigationStyle": "custom"
+		// 	}
+		// },
+		{
+			"path": "pages/user/userpage",
+			"style": {
+				"navigationBarTitleText": "用户页面",
+				// 去掉默认头部
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/sign/sign",
+			"style": {
+				"navigationBarTitleText": "注册",
+				// 去掉默认头部
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/contacts/friendInform",
+			"style": {
+				"navigationBarTitleText": "新朋友",
+				// 去掉默认头部
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/test",
+			"style": {
+				"navigationBarTitleText": "测试",
+				// 去掉默认头部
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				// 去掉默认头部
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/userdetail",
+			"style": {
+				"navigationBarTitleText": "用户详情",
+				// 去掉默认头部
+				"navigationStyle": "custom"
+			}
+		}, 
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "聊天页面",
+				// 去掉默认头部
+				"navigationStyle": "custom"
+				
+			}
+
+		}
+        ,{
+            "path" : "pages/group/group",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "建群",
+                "navigationStyle": "custom"
+            }
+            
+        }
+        ,{
+            "path" : "pages/groupDatail/groupDatail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "群详情",
+                "navigationStyle": "custom"
+            }
+            
+        }
+    ],
+	"tabBar": {
+		"backgroundColor": "#ffffff",
+		"selectedColor": "#9370DB",
+		"height": "100rpx",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "聊天",
+				"iconPath": "static/images/index/toke.png",
+				"selectedIconPath": "static/images/index/tokenone.png"
+			}, {
+				"pagePath": "pages/contacts/contact",
+				"text": "联系人",
+				"iconPath": "static/images/index/tongxv.png",
+				"selectedIconPath": "static/images/index/tokenone.png"
+			}
+			// {
+			// 	"pagePath": "pages/user/user",
+			// 	"text": "用户",
+			// 	"iconPath": "static/images/index/发现 (2).png",
+			// 	"selectedIconPath": "static/images/index/发现 (1).png"
+			// }
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff"
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}
